@@ -1,0 +1,212 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icone botton  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Sultanate of Oman</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Section 1" class="your-active-class">
+        <div class="landing__container">
+          <h2>History</h2>
+          <p>
+            Oman has a long history. Archaeological research has found evidence
+            of civilisation in the Sultanate as long ago as 3,000 years BCE. By
+            2,500 years BCE the region was renowned for its metalworking, with
+            traders in reed boats voyaging from Oman to what is now Pakistan and
+            Iraq. A lucrative trade in frankincense with ancient Egypt, Rome,
+            Jerusalem and Bethlehem, both overland and by sea, saw the creation
+            of ports like Sumhuram where the Queen of Sheba had a palace. After
+            Oman embraced Islam in the 7th century, the country became a
+            dominant maritime power with trade routes extending as far as Africa
+            to the south, and India and China to the east.
+          </p>
+
+          <p>
+            By the 15th century ships like Jewel of Muscat, an Omani
+            reconstruction of a traditional Arab trading vessel – the kind of
+            ship Sindbad would have used – were making regular trading voyages
+            to ports like Guangzhou (Canton) in China. But Oman’s strategically
+            important location on the Indian Ocean at the entrance of the Gulf
+            also made it a valuable prize for successive empire builders.
+            However, throughout its long history Oman has never been a colony.
+            It has always maintained its essential sovereignty and independence,
+            even if at certain periods foreign powers controlled some coastal
+            areas in a bid to protect their trade routes. Thus in the 16th
+            century Muscat was seized by Portugal, which held the city until
+            1650. Following their expulsion, Oman expanded its influence down
+            the coast of East Africa. For a time, Zanzibar became Oman’s capital
+            and the Sultan’s main palace was located there.
+          </p>
+
+          <p>
+            During the 18th century Ahmad ibn Said drove out Persian invaders
+            and became the elected Imam, establishing the dynasty that still
+            rules Oman today. After signing a treaty of friendship in 1798 (the
+            first between an Arab Gulf state and Britain), Oman and Britain
+            developed increasingly close ties, without the Sultanate ever
+            becoming a colony. Around the same period the Sultanate also
+            developed relations with France and the Netherlands creating a
+            network of trade and cultural exchanges. In 1833 Sultan Said of Oman
+            signed a treaty of friendship and commerce with a trade
+            representative of the United States, opening the way to a diplomatic
+            relationship
+          </p>
+
+          <p>
+            The discovery and exploitation of oil in the 1920s and 30s marked a
+            new era for Oman, but it was not until Sultan Qaboos replaced his
+            father in 1970 that the country began to develop an advanced
+            economy. After defeating a Communist backed insurgency in the Dhofar
+            region in the south of Oman, Sultan Qaboos led the country through a
+            period of rapid development with oil revenues invested in education,
+            health, welfare and a modern infrastructure. During his 50-year
+            reign Sultan Qaboos became an immensely popular figure, widely
+            admired as the Father of the Nation. Under the leadership of His
+            Majesty Sultan Haitham bin Tarik, Oman is now focussed on building
+            for the future – diversifying the economy further. The Vision 2040
+            project aims to unlock the human, technological and economic
+            potential of the Sultanate to create a more secure, prosperous and
+            sustainable future for all Omanis.
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+        <div class="landing__container">
+          <h2>Geography</h2>
+          <p>
+            It has a total area of 309,500 square kilometres (approximately
+            120,000 square miles). Oman is strategically located in the south
+            east corner of the Arabian Peninsula at the junction of Africa, Asia
+            and the Middle East. Its long coastline includes regions that can be
+            green and habitable, unlike much of the country’s interior which
+            lies in the wilderness region of the Arabian Peninsula known as the
+            Rub’ al Khali (The Empty Quarter). Traditionally considered as arid
+            desert, credible evidence now suggests that there is water under the
+            sands. Oman’s varied and attractive landscapes and its unspoilt
+            wilderness areas provide outstanding leisure opportunities.
+          </p>
+
+          <p>
+            In the Hajar Mountains the mountain peaks of Jabal Shams (at around
+            3,000 metres, the highest peak in the Arabian Peninsula) and Jabal
+            Akhdar (Green Mountain) offer dramatic locations with breath-taking
+            views and cool temperatures all year round. All this, combined with
+            the natural friendliness of its people, makes Oman an attractive
+            destination for visitors. The capital Muscat lies on the northern
+            coast between the sea and inland mountains. Further north along the
+            coast lies Sohar, the birthplace of Sindbad the sailor, a major
+            industrial and port city. In the Governate of Dhofar, in southern
+            Oman, where seasonal monsoon winds make the region green and
+            fertile, lies the coastal city of Salalah, which operates one of the
+            most active trans-shipment seaports in the region with a growing
+            industrial and free zone hub. In general, the climate is hot and dry
+            in the interior and hot and humid along the coast. Summer
+            temperatures in Muscat often pass 40C. Winters are mild and
+            pleasant, with lows around 20C.
+          </p>
+
+          <p>
+            Oman’s population is around 5 million, with about 43% non-Omani
+            expatriates. Around half the population is aged under 30. More than
+            80% of the population live in urban areas, with 50% of the
+            population living in and around Muscat.
+          </p>
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+        <div class="landing__container">
+          <h2>Relief</h2>
+          <p>
+            Northern Oman is dominated by three physiographic zones. The long,
+            narrow coastal plain known as Al-Bāṭinah stretches along the Gulf of
+            Oman. The high, rugged Ḥajar Mountains extend southeastward,
+            parallel to the gulf coast, from the Musandam Peninsula to a point
+            near Cape al-Ḥadd at the easternmost tip of the Arabian Peninsula.
+            Much of the range reaches elevations above 4,800 feet (1,463
+            metres); Mount Shams (“Sun Mountain”), at an elevation of 9,777 feet
+            (2,980 metres), is the country’s highest point. The great central
+            divide of Wadi Samāʾil separates the Ḥajar into a western and an
+            eastern range. An inland plateau falls away to the southwest of the
+            Ḥajar Mountains into the great Rubʿ al-Khali (“Empty Quarter”)
+            desert, which the sultanate shares with Saudi Arabia and Yemen.
+            These zones can be further subdivided into several unofficial
+            regions: Al-Bāṭinah; the mountains and associated valleys of the
+            Eastern Ḥajar and Western Ḥajar ranges; the Oman interior area, or
+            Al-Jaww (the central foothills and valleys on the inland side of the
+            Ḥajar Mountains and the historic heartland of Oman); Al-Ẓāhirah (the
+            semidesert plain west of the interior Oman area, next to the United
+            Arab Emirates, including Al-Buraimi oasis); Al-Sharqiyyah (sandy
+            plains lying east of interior Oman behind the Ḥajar Mountains); and
+            Jaʿlān (fronting the Arabian Sea south of Cape al-Ḥadd).
+          </p>
+
+          <p>
+            The southern region of Dhofar (Ẓufār) is separated from the rest of
+            Oman by several hundred miles of open desert. Dhofar’s coastal plain
+            is fertile alluvial soil, well watered by the southwest monsoon.
+            Wooded mountain ranges, rising to about 5,000 feet (1,500 metres),
+            form a crescent there behind a long, narrow coastal plain, on which
+            the provincial capital of Ṣalālah is located. Behind the mountains,
+            gravel plains gradually merge northward into the Rubʿ al-Khali.
+          </p>
+        </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        <div class="landing__container">
+          <h2>Culture</h2>
+          <p>
+            Oman is an Arab country, and therefore you will not find great
+            diversity in religion. Omani people follow Ibadhism which is a form
+            of Islam. However, people belonging to different castes also reside
+            here but are few. People are strict about following rules and
+            regulations and take pride in their country. Arabic is spoken in
+            most parts of the country. Dialects of Arabic like Balochi and
+            Jibbali are also used. However, in certain areas, you will find
+            people speaking Urdu, French or Swahili. English is the second
+            language of Oman so, tourists don't face any problem in
+            communication. All signboards are written in both Arabic and Engish.
+          </p>
+        </div>
+      </section>
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+        <span class="visually-hidden">Scroll to Top</span>
+      </button>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
