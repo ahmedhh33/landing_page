@@ -40,7 +40,7 @@ function isInViewport(element) {
 */
 
 // Build the navigation bar
-const sectionNames = ['Section 1', 'Section 2', 'Section 3', 'Section 4'];
+const sectionNames = ['History', 'Geography', 'Relief', 'Culture'];
 
 sectionNames.forEach((sectionName, index) => {
     const listItem = document.createElement('li');
