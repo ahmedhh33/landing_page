@@ -61,6 +61,12 @@ navbarList.addEventListener('click', (event) => {
     const targetSectionId = event.target.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetSectionId);
 
+    // Remove active class from all sections
+    sections.forEach(section => section.classList.remove('active-section'));
+
+    // Add active class to the clicked section
+    targetSection.classList.add('active-section');
+
     window.scrollTo({
         top: targetSection.offsetTop,
         behavior: 'smooth'
@@ -78,10 +84,12 @@ document.addEventListener('scroll', () => {
         const navItem = navbarList.children[index].children[0];
 
         if (isInViewport(section)) {
-            section.classList.add('your-active-class');
-            navItem.classList.add('active');
+           // Removing active class from all navigation items
+           Array.from(navbarList.children).forEach(item => item.children[0].classList.remove('active'));
+
+           // Adding active class to the corresponding navigation item
+           navItem.classList.add('active');
         } else {
-            section.classList.remove('your-active-class');
             navItem.classList.remove('active');
         }
     });

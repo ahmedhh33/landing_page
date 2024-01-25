@@ -145,6 +145,15 @@ body.navbar-visible #navbar__list {
     border: 0;
 }
 
+section.active-section {
+    background-color: #333; 
+    color: #fff; 
+}
+.navbar__menu .menu__link.active {
+    background: #333;
+    color: #fff;
+}
+
 
 
 
